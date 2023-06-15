@@ -1,0 +1,40 @@
+.pict-idol {
+    height: 400px;
+    background-color: black;
+}
+
+.box-member {
+    height: 600px;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    // display: flex;
+    // justify-content: space-between;
+    .member {
+        height: 300px;
+        width: 300px;
+        background-color: #E90000;
+        margin: auto;
+        box-shadow: 0.5px 4px 1px rgb(0, 0, 0);
+        border-radius: 10px;
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    h3 {
+        margin-top: 1.5rem;
+        text-align: center;
+        color: #1862C2;
+        font-weight: 700;
+    }
+
+    .learn {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+

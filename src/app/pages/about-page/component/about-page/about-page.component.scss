@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    margin-top: 5rem;
+
+    .logo {
+        height: 300px;
+        width: 300px;
+        margin-right: 3rem;
+        margin-left: 1rem;
+    }
+
+    .about {
+        color: #1862C2;
+
+        h1 {
+            font-size: 70px;
+            font-weight: 700;
+            color: #E90000;
+        }
+        .desc {
+            text-align: justify;
+            p {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+
+        .sosmed {
+            display: flex;
+            position: relative;
+            
+            .button-sosmed {
+                position: relative;
+                text-align: center;
+
+                .sosmed-name {
+                    left: -20px;
+                    position: absolute;
+                    border-radius: 5px;
+                    width: 103px;
+                    height: 34px;
+                    padding: 5px 10px;
+                    color: whitesmoke;
+                    background-color: #1862C2;
+                    opacity: 0;
+                    transition: opacity .3s ease;
+                }
+    
+                .sosmed-name::before {
+                    position: absolute;
+                    content: "";
+                    background-color: #1862C2;
+                    height: 15px;
+                    width: 15px;
+                    left: 50%;
+                    top: -8px;
+                    transform: translateX(-50%) rotate(45deg);
+                }
+                
+               }
+               .button-sosmed:hover {
+                // background-color: #1862C2;
+                button{
+                    background-color: #1862C2;
+                }            
+               .sosmed-name{
+                   opacity: 1;
+               }
+       
+            //    button:hover .sosmed-name {
+            //        opacity: 1;
+            //    }
+            }
+        }
+
+       
+
+
+        button {
+            background-color: #E90000;
+            border-radius: 50%;
+            border: none;
+            width: 50px;
+            height: 50px;
+            margin: 0.5rem;
+
+            i {
+                color: whitesmoke;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.count {
+    height: 500px;
+    background-color: #1862C2;
+    margin-top: 3rem;
+    color: whitesmoke;
+
+    h1 {
+        text-align: center;
+        padding-top: 2rem;
+        font-weight: 700;
+    }
+
+    i {
+        font-size: 150px;
+    }
+
+    a {
+        color: whitesmoke;
+    }
+
+    div {
+        div {
+            margin: 3rem;
+            text-align: center;
+
+            h4{
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+
+    .container {
+
+        .about {
+            padding: 2rem;
+            text-align: center;
+    
+            h1{
+                font-size: 55px;
+                
+            }
+
+            .desc {
+                text-align: justify;
+
+
+                
+            }
+
+        }
+    }
+
+    .sosmed {
+        justify-content: center;
+
+    }
+    
+}

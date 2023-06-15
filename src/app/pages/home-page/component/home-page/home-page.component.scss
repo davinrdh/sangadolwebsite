@@ -1,0 +1,214 @@
+$primary: #1862C2;
+
+.hero {
+    padding: 5rem;
+    color: $primary;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+
+.kamusngidol {
+    height: 700px;
+    background-color: #1862C2;
+    color: whitesmoke;
+}
+
+.title-content {
+    padding-top: 50px;
+    font-weight: 600;
+}
+
+.content {
+    // background-color: whitesmoke;
+    width: 900px;
+    height: 350px;
+    margin-top: 40px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carousel {
+        // max-width: 1200px;
+        // width: 1000px;
+        // background-color: darkblue;
+
+        .view-more {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .btn-primary {
+            border: none;
+        }
+
+
+        .main-content {
+            display: flex;
+            // white-space: nowrap;
+            // overflow: hidden;
+            justify-content: center;
+
+            .item {
+                margin: 0.7rem;
+                width: 258px;
+                height: 258px;
+                border-radius: 5px;
+                background-color: #ff4e49;
+                justify-content: center;
+                display: flex;
+                box-shadow: 0.5px 4px 1px rgb(0, 0, 0);
+
+                img {
+                    // object-fit: cover;
+                    height: 250px;
+                    border: black;
+                    margin-top: 4px;
+                    border-radius: 5px;
+                }
+
+            }
+
+        }
+    }
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: -1.8rem;
+    transform: translate(-50%, -50%);
+}
+
+.senlist {
+    height: 800px;
+    color: $primary;
+
+    h1 {
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+    .view-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-senlist {
+        height: 480px;
+        margin-top: 25px;
+        // margin-bottom: 5rem;
+        // background-color: black;
+        display: flex;
+        // justify-content: center;
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            .main-content {
+                display: flex;
+                justify-content: space-between;
+
+                .content {
+                    width: 270px;
+                    height: 480px;
+                    margin: 1rem;
+                    background-color: #ff4e49;
+                    box-shadow: 0.5px 4px 1px rgb(0, 0, 0);
+                    // display: flex;
+                    // justify-content: center;
+    
+                    .video {
+                        border-radius: 10px;
+                        width: 265px;
+                        height: 475px;
+                        margin: auto;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.chant {
+    height: 700px;
+    background-color: $primary;
+    color: whitesmoke;
+
+    h1 {
+        font-weight: 700;
+        padding-top: 50px;
+    }
+
+    .main-content {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .hero {
+        padding: 1rem;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .kamusngidol {
+        h3 {
+           font-size: 19px;
+        }
+
+        .content {
+            width: 300px;
+
+            .carousel {
+                .main-content {
+                    // display: block;
+
+                    .item-responsive {
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .senlist {
+
+        .content-responsive {
+            display: none;
+        }
+
+        h3 {
+            font-size: 19px;
+            margin-bottom: 1rem;
+        }
+
+    }
+}
