@@ -75,4 +75,10 @@ nav {
         }
     }
 
+    .nav-item .nav-link.active, .nav-item .show > .nav-link {
+        color: #ff4e49;
+        border-bottom: none;
+        border-radius: none;
+        transition: 0.5 ease;
+    }
 }
